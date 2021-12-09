@@ -2,8 +2,6 @@ const fs = require('fs')
 const readline = require('readline');
 
 const numbers = [49, 48, 98, 84, 71, 59, 37, 36, 6, 21, 46, 30, 5, 33, 3, 62, 63, 45, 43, 35, 65, 77, 57, 75, 19, 44, 4, 76, 88, 92, 12, 27, 7, 51, 14, 72, 96, 9, 0, 17, 83, 64, 38, 95, 54, 20, 1, 74, 69, 80, 81, 56, 10, 68, 42, 15, 99, 53, 93, 94, 47, 13, 29, 34, 60, 41, 82, 90, 25, 85, 78, 91, 32, 70, 58, 28, 61, 24, 55, 87, 39, 11, 79, 50, 22, 8, 89, 26, 16, 2, 73, 23, 18, 66, 52, 31, 86, 97, 67, 40];
-let boards = [];
-let rows = [];
 
 function getAllIndexes(arr, val) {
   var indexes = [], i;
@@ -21,6 +19,8 @@ const readInterface = readline.createInterface({
 });
 
 function reddit1() {
+  let boards = [];
+  let rows = [];
   readInterface.on('line', function (line) {
     if (line !== '') {
       const row = line.split(' ');
@@ -52,7 +52,7 @@ function reddit1() {
             if (k === 4) {
               // count number of occurances of numbers
               for (let l = 0; l < 5; l++) {
-                const res = indexes.reduce((a, v) => (parseInt(v) === l ? a + 1 : a), 0);
+                const res = indexes.reduce((a, v) => (v === l ? a + 1 : a), 0);
                 if (res === 5) {
                   isFullColumn = true;
                   break;
@@ -61,8 +61,17 @@ function reddit1() {
               indexes = [];
             }
             if (isFullRow || isFullColumn) {
-              console.log(boards[j]);
-              console.log(numbers[i]);
+              console.log('Winning board: ', boards[j]);
+              console.log('Number called: ', numbers[i]);
+              let winningBoardValue = 0;
+              boards[j].forEach((row) => {
+                row.forEach((entry) => {
+                  if (entry !== '*') {
+                    winningBoardValue += parseInt(entry, 10);
+                  }
+                });
+              });
+              console.log('Part 1 Result: ', winningBoardValue * numbers[i]);
               break;
             }
           }
@@ -79,6 +88,8 @@ function reddit1() {
 };
 
 function reddit2() {
+  let boards = [];
+  let rows = [];
   readInterface.on('line', function (line) {
     if (line !== '') {
       const row = line.split(' ');
@@ -106,16 +117,12 @@ function reddit2() {
                 isFullRow = boards[j][k].filter((item) => item !== '*').length === 0;
               }
             }
-            const columnIndexes = boards[j][k].reduce(function (a, e, i) {
-              if (e === '*')
-                a.push(i);
-              return a;
-            }, []);
+            const columnIndexes = getAllIndexes(boards[j][k], '*');
             columnIndexes.forEach((index) => {
               indexes.push(index);
             });
             if (k === 4) {
-              // count number of occurances of numbers
+              // count number of occurances of * at 1 index, if 5, full column
               for (let l = 0; l < 5; l++) {
                 const res = indexes.reduce((a, v) => (v === l ? a + 1 : a), 0);
                 if (res === 5) {
@@ -131,8 +138,17 @@ function reddit2() {
             isFullRow = false;
             isFullColumn = false;
             if (numberOfBoardsWon === 100) {
-              console.log(boards);
-              console.log(numbers[i]);
+              console.log('Losing board: ', boards[0]);
+              console.log('Number called: ', numbers[i]);
+              let losingBoardValue = 0;
+              boards[0].forEach((row) => {
+                row.forEach((entry) => {
+                  if (entry !== '*') {
+                    losingBoardValue += parseInt(entry, 10);
+                  }
+                });
+              });
+              console.log('Part 2 Result: ', losingBoardValue * numbers[i]);
               break;
             } else {
               boards.splice(j, 1);
@@ -147,13 +163,5 @@ function reddit2() {
   });
 };
 
-// reddit1();
+reddit1();
 reddit2();
-
-// 24 + 9 + 94 + 69 + 97 + 85 + 53 + 92 + 11 + 61 + 8 + 68 + 55 + 52 + 93 = 871
-// number 75
-// 871 * 75 = 65325
-
-// 86 + 97 + 2 + 73 + 31 = 289
-// number 16
-// 289 * 16 = 4624

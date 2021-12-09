@@ -10,11 +10,13 @@ const readInterface = readline.createInterface({
 
 let string = '';
 let indicator;
+let numberOne;
+let numberTwo;
 
 function filtering(array) {
   const ones = array.filter((item) => item === '1');
   const zeros = array.filter((item) => item === '0');
-  if (ones.length > 500) {
+  if (ones.length > zeros.length) {
     string += '1';
   } else {
     string += '0';
@@ -85,7 +87,16 @@ function reddit1() {
       filtering(bit10);
       filtering(bit11);
       filtering(bit12);
-      console.log(string);
+      const firstNumber = parseInt(string, 2);
+      const secondBinaryNumber = string.replace(/0|1/g, v => {
+        if (v == "0") {
+          return "1"
+        } else {
+          return "0"
+        }
+      });
+      const secondNumber = parseInt(secondBinaryNumber, 2);
+      console.log(firstNumber * secondNumber);
     }
   });
 };
@@ -181,7 +192,7 @@ function reddit2() {
       sortLines(newLines);
       figureout(bit12, 11);
 
-      console.log(newLines);
+      numberOne = parseInt(newLines[0], 2);
     }
   });
 };
@@ -277,21 +288,14 @@ function reddit3() {
       sortLines(newLines);
       figureout(bit12, 11);
 
-      console.log(newLines);
+      numberTwo = parseInt(newLines[0], 2);
+      if (numberOne && numberTwo) {
+        console.log(numberOne * numberTwo);
+      }
     }
   });
 }
 
-// first number is 000110100011
-// second number therefore is 111001011100
-
-// 419 * 3676 is 1540244
-
-// 02 indicator is 010010001001
-// co2 is          111000100101
-// 1161 * 3621 = 4203981
-
+reddit1();
 reddit2();
 reddit3();
-
-

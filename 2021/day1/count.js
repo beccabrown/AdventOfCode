@@ -1,7 +1,5 @@
 const fs = require('fs')
 const readline = require('readline');
-let prevLineA = [];
-let count = 0;
 
 const readInterface = readline.createInterface({
   input: fs.createReadStream('./data.txt'),
@@ -11,15 +9,22 @@ const readInterface = readline.createInterface({
 });
 
 function reddit1() {
+  let prevLine = 0;
+  let count = 0;
+  let lineNumber = 1;
   readInterface.on('line', function (line) {
     const increase = parseInt(line) - parseInt(prevLine) > 0 && prevLine !== '0';
     if (increase) count += 1;
     prevLine = line;
-    console.log(count);
+    lineNumber++;
+    if (lineNumber === 2000) console.log(count);
   });
 };
 
 function reddit2() {
+  let prevLineA = [];
+  let count = 0;
+  let lineNumber = 1;
   readInterface.on('line', function (line) {
     const newLength = prevLineA.push(parseInt(line));
     if (newLength > 4) {
@@ -38,10 +43,12 @@ function reddit2() {
       })
       const increase = sumA < sumB;
       if (increase) count += 1;
-      console.log(count);
+      if (lineNumber === 2000) console.log(count);
     }
+    lineNumber ++;
   });
 };
 
+reddit1();
 reddit2();
 

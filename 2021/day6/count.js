@@ -52,7 +52,7 @@ function reddit2(data, days) {
   return [...fishes.values()].reduce((partial_sum, a) => partial_sum + a, 0);
 };
 
-console.log(reddit1(testData, 80));
-console.log(reddit1(initialData, 80));
-console.log(reddit2(testData, 256));
-console.log(reddit2(initialData, 256));
+console.log('Test Data result part 1: ', reddit1(testData, 80));
+console.log('Puzzle Input Data result Part 1: ', reddit1(initialData, 80));
+console.log('Test Data result part 2: ', reddit2(testData, 256));
+console.log('Puzzle Input Data result Part 2: ', reddit2(initialData, 256));

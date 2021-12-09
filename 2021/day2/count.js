@@ -1,8 +1,5 @@
 const fs = require('fs')
 const readline = require('readline');
-let horizontal = 0;
-let vertical = 0;
-let aim = 0;
 
 const readInterface = readline.createInterface({
   input: fs.createReadStream('./data.txt'),
@@ -12,6 +9,9 @@ const readInterface = readline.createInterface({
 });
 
 function reddit1() {
+  let horizontal = 0;
+  let vertical = 0;
+  let lineNumber = 1;
   readInterface.on('line', function (line) {
     const [direction, value] = line.split(' ');
     if (direction === 'forward') {
@@ -21,11 +21,16 @@ function reddit1() {
     } else if (direction === 'up') {
       vertical -= parseInt(value);
     }
-    console.log(horizontal, vertical);
+    if (lineNumber === 1000) console.log(horizontal * vertical);
+    lineNumber ++;
   });
 };
 
 function reddit2() {
+  let horizontal = 0;
+  let vertical = 0;
+  let aim = 0;
+  let lineNumber = 1;
   readInterface.on('line', function (line) {
     const [direction, value] = line.split(' ');
     if (direction === 'forward') {
@@ -36,9 +41,11 @@ function reddit2() {
     } else if (direction === 'up') {
       aim -= parseInt(value);
     }
-    console.log(horizontal, vertical);
+    if (lineNumber === 1000) console.log(horizontal * vertical);
+    lineNumber ++;
   });
 };
 
+reddit1();
 reddit2();
 
