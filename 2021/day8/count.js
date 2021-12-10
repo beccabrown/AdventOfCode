@@ -170,7 +170,7 @@ function reddit2() {
     });
     decodedLines.push(parseInt(decodedLine.join(''), 10));
     if (lineNumber === 200) {
-      console.log(decodedLines.reduce((partial_sum, a) => partial_sum + a, 0));
+      console.log(decodedLines.reduce((partialSum, a) => partialSum + a, 0));
     }
     lettersMapped.clear();
     lineNumber++;

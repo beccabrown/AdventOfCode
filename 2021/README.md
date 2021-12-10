@@ -90,8 +90,8 @@ I used Node v14.18.0, use [asdf](http://asdf-vm.com/) or [nvm](https://www.linod
 
 ## Roadmap
 
-- [ ] Add in problem outlines
-- [ ] Update each day so both parts can be used
+- [X] Add in problem outlines
+- [X] Update each day so both parts can be used
 - [ ] Make functions/more descriptive variable names
 
 <p align="right">(<a href="#top">back to top</a>)</p>

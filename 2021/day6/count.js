@@ -49,7 +49,7 @@ function reddit2(data, days) {
     fishes.set(1, c);
     fishes.set(0, b);
   }
-  return [...fishes.values()].reduce((partial_sum, a) => partial_sum + a, 0);
+  return [...fishes.values()].reduce((partialSum, a) => partialSum + a, 0);
 };
 
 console.log('Test Data result part 1: ', reddit1(testData, 80));
