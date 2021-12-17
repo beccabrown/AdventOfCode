@@ -159,10 +159,8 @@ function workOutValues(flag, number) {
       break;
     }
     case 'equal': {
-      const half = Math.ceil(number.length / 2);
-      const firstHalf = number.slice(0, half);
-      const secondHalf = number.slice(-half);
-      if (parseInt(firstHalf, 2) === parseInt(secondHalf, 2)) {
+      const [firstSubpacket, secondSubpacket] = number;
+      if (parseInt(firstSubpacket, 2) === parseInt(secondSubpacket, 2)) {
         result = 1;
       } else {
         result = 0;
