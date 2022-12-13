@@ -22,7 +22,7 @@
     <img src="../images/2021.png" alt="Logo" width="200" height="200">
   </a>
 
-  <h3 align="center">Advent of Code 2021 - Bex Brown</h3>
+  <h3 align="center">Advent of Code 2015 - Bex Brown</h3>
 </div>
 
 
@@ -52,13 +52,13 @@
 
 ## About The Project
 
-I wanted to use Node's internal modules only, so no reliance on dependencies
+I wanted to improve my Python
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
 
-* [Node.js](https://nodejs.dev/)
+* [Python](https://www.python.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -69,7 +69,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-I used Node v14.18.0, use [asdf](http://asdf-vm.com/) or [nvm](https://www.linode.com/docs/guides/how-to-install-use-node-version-manager-nvm/) to manage this.
+I used Python v14.18.0, use [asdf](http://asdf-vm.com/) or [nvm](https://www.linode.com/docs/guides/how-to-install-use-node-version-manager-nvm/) to manage this.
 
 ### Installation
 

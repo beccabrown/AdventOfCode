@@ -265,6 +265,7 @@ console.log('---------------------');
 
 // Part 1
 console.log('Part 1 ', part1(fs.readFileSync('./data.txt').toString()));
+console.log('Part 1 github', part1(fs.readFileSync('./github.txt').toString()));
 
 console.log('------TESTING---------');
 console.log(part2(test1a));
@@ -280,3 +281,4 @@ console.log('---------------------');
 
 // Part 2
 console.log('Part 2 ', part2(fs.readFileSync('./data.txt').toString()));
+console.log('Part 2 github', part2(fs.readFileSync('./github.txt').toString()));

@@ -1,5 +1,6 @@
 const real = 'target area: x=150..193, y=-136..-86';
 const example = 'target area: x=20..30, y=-10..-5';
+const github = 'target area: x=201..230, y=-99..-65';
 
 function fireProjectile(velocity, xrange, yrange) {
   let possibilityOfHitting = true;
@@ -56,6 +57,7 @@ function reddit1(input) {
 
 console.log('Part1 example: ', reddit1(example).highestY);
 console.log('Part1 real: ', reddit1(real).highestY);
+console.log('Part1 real github: ', reddit1(github).highestY);
 console.log('Part2 example: ', reddit1(example).totalValidVelocities);
 console.log('Part2 real: ', reddit1(real).totalValidVelocities);
-
+console.log('Part2 real github: ', reddit1(github).totalValidVelocities);

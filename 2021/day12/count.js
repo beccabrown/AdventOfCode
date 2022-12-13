@@ -1,4 +1,5 @@
-const input = ['ax-end', 'xq-GF', 'end-xq', 'im-wg', 'ax-ie', 'start-ws', 'ie-ws', 'CV-start', 'ng-wg', 'ng-ie', 'GF-ng', 'ng-av', 'CV-end', 'ie-GF', 'CV-ie', 'im-xq', 'start-GF', 'GF-ws', 'wg-LY', 'CV-ws', 'im-CV', 'CV-wg'];
+// const input = ['ax-end', 'xq-GF', 'end-xq', 'im-wg', 'ax-ie', 'start-ws', 'ie-ws', 'CV-start', 'ng-wg', 'ng-ie', 'GF-ng', 'ng-av', 'CV-end', 'ie-GF', 'CV-ie', 'im-xq', 'start-GF', 'GF-ws', 'wg-LY', 'CV-ws', 'im-CV', 'CV-wg'];
+const input = ['xz-end', 'CJ-pt', 'pt-QW', 'hn-SP', 'pw-CJ', 'SP-end', 'hn-pt', 'GK-nj', 'fe-nj', 'CJ-nj', 'hn-ZZ', 'hn-start', 'hn-fe', 'ZZ-fe', 'SP-nj', 'SP-xz', 'ZZ-pt', 'nj-ZZ', 'start-ZZ', 'hn-GK', 'CJ-end', 'start-fe', 'CJ-xz']
 // const input = ['start-A', 'start-b', 'A-c', 'A-b', 'b-d', 'A-end', 'b-end'];
 // const input = ['dc-end', 'HN-start', 'start-kj', 'dc-start', 'dc-HN', 'LN-dc',, 'HN-end', 'kj-sa', 'kj-HN', 'kj-dc'];
 // const input = ['fs-end', 'he-DX', 'fs-he', 'start-DX', 'pj-DX', 'end-zg', 'zg-sl', 'zg-pj', 'pj-he', 'RW-he', 'fs-DX', 'pj-RW', 'zg-RW', 'start-pj', 'he-WI', 'zg-he', 'pj-fs', 'start-RW'];

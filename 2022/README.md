@@ -9,11 +9,10 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 <div align="center">
-<a href="https://nodejs.dev/">
-    <img src="https://img.shields.io/badge/node-v14.18.0-green" alt="Node version 14.18.0">
+<a href="https://www.python.org/">
+    <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python version 3">
   </a>
 </div>
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -22,10 +21,8 @@
     <img src="../images/2021.png" alt="Logo" width="200" height="200">
   </a>
 
-  <h3 align="center">Advent of Code 2021 - Bex Brown</h3>
+  <h3 align="center">Advent of Code 2022 - Bex Brown</h3>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -48,20 +45,17 @@
   </ol>
 </details>
 
-
-
 ## About The Project
 
-I wanted to use Node's internal modules only, so no reliance on dependencies
+I wanted to brush up on Python
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
 
-* [Node.js](https://nodejs.dev/)
+* [Python](https://www.python.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 ## Getting Started
 
@@ -69,7 +63,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-I used Node v14.18.0, use [asdf](http://asdf-vm.com/) or [nvm](https://www.linode.com/docs/guides/how-to-install-use-node-version-manager-nvm/) to manage this.
+I used Python v3, use [asdf](http://asdf-vm.com/) or [nvm](https://www.linode.com/docs/guides/how-to-install-use-node-version-manager-nvm/) to manage this.
 
 ### Installation
 
@@ -79,7 +73,7 @@ I used Node v14.18.0, use [asdf](http://asdf-vm.com/) or [nvm](https://www.linod
    ```
 2. Change directories to the year and day
    ```sh
-   cd 2021/day1
+   cd 2022/day1
    ```
 3. ```sh
    node count.js
@@ -89,8 +83,6 @@ I used Node v14.18.0, use [asdf](http://asdf-vm.com/) or [nvm](https://www.linod
 
 ## Roadmap
 
-- [X] Add in problem outlines
-- [X] Update each day so both parts can be used
-- [ ] Make functions/more descriptive variable names
+- [ ] Complete the puzzles
 
 <p align="right">(<a href="#top">back to top</a>)</p>

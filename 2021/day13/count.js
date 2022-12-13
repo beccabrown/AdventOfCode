@@ -2,7 +2,7 @@ const fs = require('fs')
 const readline = require('readline');
 
 const readInterface = readline.createInterface({
-  input: fs.createReadStream('./data.txt'),
+  input: fs.createReadStream('./github.txt'),
   output: process.stdout,
   console: false,
   terminal: false,
@@ -81,3 +81,4 @@ reddit1(true);
 reddit1();
 
 //AHPRPAUZ
+//ARHZPCUH

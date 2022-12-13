@@ -51,5 +51,7 @@ function reddit1(steps, inputFile, display) {
 
 reddit1(10, './example.txt', 'Part 1 example: ');
 reddit1(10, './data.txt', 'Part 1 real: ');
+reddit1(10, './github.txt', 'Part 1 Github real: ');
 reddit1(40, './example.txt', 'Part 2 example: ');
 reddit1(40, './data.txt', 'Part 2 real: ');
+reddit1(40, './github.txt', 'Part 2 Github real: ');

@@ -15,8 +15,6 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -26,8 +24,6 @@
 
   <h3 align="center">Advent of Code - Bex Brown</h3>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -48,8 +44,6 @@
   </ol>
 </details>
 
-
-
 ## About The Project
 
 [Advent of Code](https://adventofcode.com/2021/about) is a collection of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language. This repository houses my solutions to the puzzles. I intend to come back to this during the years to improve them.
@@ -61,6 +55,7 @@
 Might try different languages each year
 
 * [Node.js](https://nodejs.dev/)
+* [Python](https://www.python.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -69,6 +64,7 @@ Might try different languages each year
 Follow the README for the year you want
 
  * [2021](2021/) I wanted to use Node's internal modules only, so no reliance on dependencies
+ * [2022](2022/) I wanted to brush up on my Python
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -100,7 +96,6 @@ Distributed under the MIT License. See [LICENSE.txt](LICENSE.txt) for more infor
 * [Advent of Code](https://adventofcode.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

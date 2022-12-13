@@ -2,7 +2,7 @@ const fs = require('fs')
 const readline = require('readline');
 
 const readInterface = readline.createInterface({
-  input: fs.createReadStream('./data.txt'),
+  input: fs.createReadStream('./github.txt'),
   output: process.stdout,
   console: false,
   terminal: false,
@@ -64,7 +64,7 @@ function reddit1() {
       });
       incompleteLineScores.push(incompleteLineScore);
     }
-    if (lineNumber === 94) {
+    if (lineNumber === 110) {
       console.log(corruptionCount);
       console.log(incompleteLineScores.sort((a, b) => a - b)[Math.floor(incompleteLineScores.length / 2)]);
     }

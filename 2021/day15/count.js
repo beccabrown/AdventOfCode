@@ -69,5 +69,7 @@ function reddit1(inputFile, part2) {
 
 console.log('Part1 example: ', reddit1('./example.txt'));
 console.log('Part1 data: ', reddit1('./data.txt'));
+console.log('Part1 github: ', reddit1('./github.txt'));
 console.log('Part2 example: ', reddit1('./example.txt', true));
 console.log('Part2 data: ', reddit1('./data.txt', true));
+console.log('Part2 github: ', reddit1('./github.txt', true));
