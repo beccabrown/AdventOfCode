@@ -63,7 +63,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-I used Python v3, use [asdf](http://asdf-vm.com/) or [nvm](https://www.linode.com/docs/guides/how-to-install-use-node-version-manager-nvm/) to manage this.
+I used Python v3, use "TODO: insert here" to manage this.
 
 ### Installation
 
@@ -76,7 +76,7 @@ I used Python v3, use [asdf](http://asdf-vm.com/) or [nvm](https://www.linode.co
    cd 2022/day1
    ```
 3. ```sh
-   node count.js
+   python3 count.py
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>

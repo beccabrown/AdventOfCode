@@ -22,7 +22,7 @@
     <img src="../images/2021.png" alt="Logo" width="200" height="200">
   </a>
 
-  <h3 align="center">Advent of Code 2015 - Bex Brown</h3>
+  <h3 align="center">Advent of Code 2015 - WIP Bex Brown</h3>
 </div>
 
 
@@ -52,7 +52,7 @@
 
 ## About The Project
 
-I wanted to improve my Python
+I wanted to improve my Python <- choose different language, java?
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -69,7 +69,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-I used Python v14.18.0, use [asdf](http://asdf-vm.com/) or [nvm](https://www.linode.com/docs/guides/how-to-install-use-node-version-manager-nvm/) to manage this.
+I used Python 3, use blah to manage this.
 
 ### Installation
 
@@ -79,18 +79,16 @@ I used Python v14.18.0, use [asdf](http://asdf-vm.com/) or [nvm](https://www.lin
    ```
 2. Change directories to the year and day
    ```sh
-   cd 2021/day1
+   cd 2015/day1
    ```
 3. ```sh
-   node count.js
+   python3 count.py
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Roadmap
 
-- [X] Add in problem outlines
-- [X] Update each day so both parts can be used
-- [ ] Make functions/more descriptive variable names
+To be decided
 
 <p align="right">(<a href="#top">back to top</a>)</p>
